@@ -1,0 +1,10 @@
+{
+  "statusCode": 400,
+  "response": {
+    "APIDefenderResponse": {
+      "Status": 400,
+      "Message": "Bad Request",
+      "Details": "Please provide correct field name, body type etc."
+    }
+  }
+}

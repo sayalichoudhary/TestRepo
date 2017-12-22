@@ -1,0 +1,55 @@
+{
+  /* Web Server */
+  "server": {
+    "port": 3000
+  },
+  /* Application Relay Config file location */
+  "APIDomainConfLoc": "/application/config/Application-Relay.json",
+  /* Policy, ID and Log file location */
+  "fileLoc": {
+    "log": "./ti_logs.txt",
+    "policy": "/policyFiles",
+    "id": "./policyFiles"
+  },
+  /* Log4JS Configuration Object */
+  "logger": {
+    "levels": {
+      "[all]": "ERROR"
+    },
+    "appenders": [
+      {
+        "type": "console"
+      },
+      {
+        "type": "dateFile",
+        "filename": "./logs/application",
+        "pattern": "-yyyy-MM-dd.log",
+        "alwaysIncludePattern": true
+      },
+      {
+        "type": "dateFile",
+        "filename": "logs/realtime.log",
+        "pattern": "hh",
+        "alwaysIncludePattern": false
+      }
+    ],
+    "replaceConsole": false
+  },
+  "ipUrls": {
+    "ipv4": "http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz",
+    "ipv6": "http://geolite.maxmind.com/download/geoip/database/GeoIPv6.dat.gz"
+  },
+  "keys": {
+    "enterpriseKey": "ent"
+  },
+  "nginxOpts": {
+    "confDir": "/etc/nginx/conf.d",
+    "pidFile": "/var/run/nginx.pid",
+    "cert_key_loc": "/ssl_certs/"
+  },
+  "redisConf": {
+    "port": 6379,
+    "host": "redis",
+    "passkey": "Your_Redis_passKey"
+  }
+}

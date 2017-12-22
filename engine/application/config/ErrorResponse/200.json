@@ -1,0 +1,10 @@
+{
+  "statusCode": 200,
+  "response": {
+    "APIDefenderResponse": {
+      "Status": 200,
+      "Message": "Success",
+      "Details": "Upload successful."
+    }
+  }
+}

@@ -1,0 +1,16 @@
+# Configure logs by running cron jobs
+# Created by API Defender on 10/05/2016
+# @version 1.0
+
+su ec2-user ec2-user
+
+/home/ec2-user/code/mobileasap_tiengine/ti_engine/logs/crontabLogs/crontab.log {
+    daily
+    create 0644 ec2-user ec2-user
+    rotate 7
+    compress
+    delaycompress
+    dateext
+    missingok
+    notifempty
+}

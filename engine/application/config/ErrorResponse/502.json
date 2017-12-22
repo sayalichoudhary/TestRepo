@@ -1,0 +1,10 @@
+{
+  "statusCode": 502,
+  "response": {
+    "APIDefenderResponse": {
+      "Status": 502,
+      "Message": "Bad Gateway",
+      "Details": "Bad Gateway."
+    }
+  }
+}

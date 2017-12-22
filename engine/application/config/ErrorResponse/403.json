@@ -1,0 +1,10 @@
+{
+  "statusCode": 403,
+  "response": {
+    "APIDefenderResponse": {
+      "Status": 403,
+      "Message": "Access Forbidden",
+      "Details": "Access Forbidden, APIDefender detect an attack."
+    }
+  }
+}

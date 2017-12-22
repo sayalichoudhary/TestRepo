@@ -1,0 +1,10 @@
+{
+  "statusCode": 429,
+  "response": {
+    "APIDefenderResponse": {
+      "Status": 429,
+      "Message": "Too many request",
+      "Details": "Too many request, APIDefender detect an attack."
+    }
+  }
+}

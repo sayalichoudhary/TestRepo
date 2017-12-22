@@ -1,0 +1,20 @@
+{
+    "apiDomainConf": [
+        {
+            "apiDomainId": "default",
+            "enterpriseName": "API Defender",
+            "entId": "",
+            "app_name": "Default",
+            "appId": "",
+            "category": "",
+            "request_domain": null,
+            "request_path": null,
+            "target": "http://localhost",
+            "target_port": 3000,
+            "target_path": "",
+            "ID": "",
+            "ssl_certificate_name": "server.crt",
+            "ssl_key_name": "server.key"
+        }
+    ]
+}

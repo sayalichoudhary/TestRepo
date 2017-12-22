@@ -1,0 +1,10 @@
+{
+  "statusCode": 404,
+  "response": {
+    "APIDefenderResponse": {
+      "Status": 404,
+      "Message": "Not Found",
+      "Details": "Given Id Not Found in APIDomain file."
+    }
+  }
+}

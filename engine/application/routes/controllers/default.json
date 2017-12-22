@@ -1,0 +1,81 @@
+{
+  "config": {
+    "prefix": "",
+    "status": "ACTIVE"
+  },
+  // All traffic should go to Inspection pipeline
+  // Which will take decision whether the request should go forward or to block it
+  "routes": [
+    {
+      "requestUri": "/sys/health/ping",
+      "httpMethod": "get",
+      "handler": "DirectorRelayController.sysStatus"
+    },
+    {
+      "requestUri": "/apidefender/policy",
+      "httpMethod": "post",
+      "handler": "ManagementAPIController.policy",
+      "type": "upload"
+    },
+    {
+      "requestUri": "/apidefender/identity",
+      "httpMethod": "post",
+      "handler": "ManagementAPIController.identity",
+      "type": "upload"
+    },
+    {
+      "requestUri": "/apidefender/apidomain/SSLCertKey/:apiDomainId",
+      "httpMethod": "post",
+      "handler": "ManagementAPIController.uploadSSL",
+      "type": "uploadSSL"
+    },
+    {
+      "requestUri": "/apidefender/apidomain/entid/:entId",
+      "httpMethod": "get",
+      "handler": "ManagementAPIController.apiDomainConfig",
+      "type": "APIDomain"
+    },
+    {
+      "requestUri": "/apidefender/apidomain/apidomainid/:apiDomainId",
+      "httpMethod": "get",
+      "handler": "ManagementAPIController.apiDomainConfig",
+      "type": "APIDomain"
+    },
+    {
+      "requestUri": "/apidefender/apidomain",
+      "httpMethod": "post",
+      "handler": "ManagementAPIController.apiDomainConfig",
+      "type": "APIDomain"
+    },
+    {
+      "requestUri": "/apidefender/apidomain/entid/:entId",
+      "httpMethod": "put",
+      "handler": "ManagementAPIController.apiDomainConfig",
+      "type": "APIDomain"
+    },
+    {
+      "requestUri": "/apidefender/apidomain/apidomainid/:apiDomainId",
+      "httpMethod": "put",
+      "handler": "ManagementAPIController.apiDomainConfig",
+      "type": "APIDomain"
+    },
+    {
+      "requestUri": "/apidefender/apidomain/entid/:entId",
+      "httpMethod": "delete",
+      "handler": "ManagementAPIController.apiDomainConfig",
+      "type": "APIDomain"
+    },
+    {
+      "requestUri": "/apidefender/apidomain/apidomainid/:apiDomainId",
+      "httpMethod": "delete",
+      "handler": "ManagementAPIController.apiDomainConfig",
+      "type": "APIDomain"
+    },
+    {
+      "requestUri": "/*",
+      "httpMethod": "all",
+      "handler": "DirectorRelayController.requestVerification",
+      "type": "inspect"
+    }
+  ]
+}

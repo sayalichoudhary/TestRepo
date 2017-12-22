@@ -1,0 +1,7 @@
+# Sets cron job according to conf
+# Created by API Defender on 10/05/2016
+# @version 1.0
+
+Put the following code in Crontab to run the script everyday at 12:02 am.
+
+2 0 * * * /home/ec2-user/code/mobileasap_tiengine/ti_engine/logs.sh >> /home/ec2-user/code/mobileasap_tiengine/ti_engine/logs/crontabLogs/crontab.log 2>&1

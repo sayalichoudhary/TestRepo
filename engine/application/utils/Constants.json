@@ -1,0 +1,26 @@
+{
+  "SlotNames":
+  {
+    "URL": "URLSlot",
+    "Body": "BodyFormSlot",
+    "Header": "HeaderSlot",
+    "Ip": "IpBlackListSlot",
+    "ResponseBody": "ResponseBodySlot",
+    "ResponseHeader": "ResponseHeaderSlot",
+    "BruteForce": "BruteForceSlot",
+    "WeakPassword": "WeakPassCheckSlot",
+    "CSRF": "CSRFSlot",
+    "SessionHijack": "SessionHijackSlot",
+    "SessionFixation": "SessionFixationSlot",
+    "StaleSessionToken": "StaleSessionTokenSlot"
+  },
+  "Services":
+  {
+    "NorthBound": "ManagementAPI",
+    "PolicyLoader": "PolicyLoader",
+    "Relay": "Relay",
+    "OAuth": "OAuthID",
+    "BasicAuth": "BasicAuthID"
+  },
+  "cacheFlag": "CacheLoaded"
+}

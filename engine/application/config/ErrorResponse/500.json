@@ -1,0 +1,10 @@
+{
+  "statusCode": 500,
+  "response": {
+    "APIDefenderResponse": {
+      "Status": 500,
+      "Message": "Internal Server Error",
+      "Details": "Internal Server Error."
+    }
+  }
+}

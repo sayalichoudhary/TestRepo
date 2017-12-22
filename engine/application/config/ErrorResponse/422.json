@@ -1,0 +1,10 @@
+{
+  "statusCode": 422,
+  "response": {
+    "APIDefenderResponse": {
+      "Status": 422,
+      "Message": "Un-processable Entity",
+      "Details": "Un-processable Entity"
+    }
+  }
+}

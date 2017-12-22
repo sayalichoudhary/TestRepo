@@ -1,0 +1,3 @@
+//This is just a dummy file because we are using pm2 for deploying on server instance.
+//Where 'production' is the 'NODE_ENV' variable value and '0' is the node process id deployed in pm2.
+{}

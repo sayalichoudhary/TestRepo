@@ -1,0 +1,10 @@
+{
+  "statusCode": 401,
+  "response": {
+    "APIDefenderResponse": {
+      "Status": 401,
+      "Message": "Unauthorized",
+      "Details": "Unauthorized User, user is not registered with APIDefender."
+    }
+  }
+}
