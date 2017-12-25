@@ -16,7 +16,7 @@ COPY  ./Nginx/.htpasswd /etc/nginx
 COPY  ./Nginx/server.crt /etc/ssl
 COPY  ./Nginx/server.key /etc/ssl
 COPY  ./Nginx/dhparams.pem /etc/ssl
-COPY  supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY  ./Nginx/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 WORKDIR /app
 COPY ./engine /app
