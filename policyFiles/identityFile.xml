@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<identity>
+	<enterprisetipolicy id="ent001" isenabled="true">
+    	<applicationtipolicy id="app001" isenabled="true">
+    		<identityKey id="BasicAuth">
+    			<key id="Basic QXBpLXRlc3QgOmFwaXRlc3QxMjM0">user215</key>
+                <key id="Basic YWRtaW46cnZobjJoM1JSaA==">admin</key>
+                <key id="Basic dGVzdDp0ZXN0MTIzNA==">test</key>
+                <key id="Basic c2hhaWxlc2guZGhvYmFsZUBtaW5kc3RpeC5jb206bW9iaWxlTzI=">mobileo2</key>
+                <key id="Basic QUM1ZmU3Nzk0OWZkZGQyODA3ZjAzYjZlY2I3ZDBkNzMwNDoyODdkMTE4NTBmZjQ0NTcxMTIyZjY2MTRmMTU2YWJkZg==">twilio_user1</key>
+                <key id="Basic QUNlYzcxYjc3ODNiNmFhYWRiNTM3ZGY0OTM3NzNmNDdkNjowMDc2ZmFmZmQ4Y2Y1MWFmYmQyMTBmNmM0MGI2ZWI3ZA==">twilio_user2</key>
+                <key id="Basic QUM4Zjg4OTA4NDBjNzEyZDMwNmRlNTQxODBhZTk4ZDQwNzplNGM0NzhhNzkxZGE0MjQ0ODVmZjk5MDJkM2UyMGNkZQ==">zang-user1</key>
+
+    		</identityKey>
+            <AnonymousAPIs>
+                <api regex="/ti|/demo|/v2/Accounts/" method="GET|POST"/>
+            </AnonymousAPIs>
+    	</applicationtipolicy>
+        <applicationtipolicy id="app002" isenabled="true">
+            <identityKey id="BasicAuth">
+                <key id="Basic QXBpLXRlc3Q6YXBpdGVzdDEyMzQ=">Api-test</key>
+                <key id="Basic IEFwaS10ZXN0OmFwaXRlc3QxMjM0">Api-test</key>
+            </identityKey>
+            <AnonymousAPIs>
+                <api regex="http://localhost/ti/|/demo" method="GET|POST"/>
+            </AnonymousAPIs>
+        </applicationtipolicy>
+    </enterprisetipolicy>
+</identity>
+    		
+

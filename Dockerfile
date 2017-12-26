@@ -10,16 +10,16 @@ RUN apt-get install --yes nodejs
 RUN apt-get install --yes build-essential
 
 RUN mkdir -p /etc/nginx/conf.d
-COPY  managementAPI.conf /etc/nginx/conf.d
-COPY  nginx.conf /etc/nginx/
-COPY  .htpasswd /etc/nginx
-COPY  mobileo2.com.chained.crt /etc/ssl
-COPY  mobileo2.com.key /etc/ssl
-COPY  dhparams.pem /etc/ssl
-COPY  supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY  ./Nginx/managementAPI.conf /etc/nginx/conf.d
+COPY  ./Nginx/nginx.conf /etc/nginx/
+COPY  ./Nginx/.htpasswd /etc/nginx
+COPY  ./Nginx/mobileo2.com.chained.crt /etc/ssl
+COPY  ./Nginx/mobileo2.com.key /etc/ssl
+COPY  ./Nginx/dhparams.pem /etc/ssl
+COPY  ./Nginx/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 WORKDIR /app
-COPY ../ /app
+COPY . /app
 RUN npm install
 
 EXPOSE  80 443 
